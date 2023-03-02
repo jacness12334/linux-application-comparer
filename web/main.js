@@ -36,7 +36,7 @@ function updateDatabase() {
 
 function signIn() {
     const auth = getAuth();
-    signInWithPopup(auth).then((result) => {
+    signInWithPopup(auth, googleAuth).then((result) => {
         const user = result.user;
         console.log(user);
     });
@@ -53,4 +53,3 @@ window.onload = () => {
     const options = document.getElementsByClassName('options');
     options[4].addEventListener('click', signIn());
 }
-
