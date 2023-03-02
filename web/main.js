@@ -36,7 +36,7 @@ function updateDatabase() {
 
 function signIn() {
     const auth = getAuth();
-    signInWithPopup(auth, provider).then((result) => {
+    signInWithPopup(auth).then((result) => {
         const user = result.user;
         console.log(user);
     });
