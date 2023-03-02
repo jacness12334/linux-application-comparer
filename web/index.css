@@ -70,3 +70,14 @@ div.area {
     top: 2.75%;
     filter: invert(100%);
 }
+
+#instructions {
+    -webkit-text-stroke: black;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    font-size: 175%;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 40%;
+}
